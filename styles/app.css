@@ -1,14 +1,49 @@
-main{
+/* Main container */
+main {
     display: flex;
-   height: calc(100vh - 30px);
+    height: calc(100vh - 30px);
+    background: linear-gradient(to bottom, #000428, #004e92); /* Galaxy gradient */
+    color: white;
+    font-family: 'Arial', sans-serif;
 }
-#list{
+
+/* List section */
+.list {
     flex: 3;
-    background-color: aqua;
-    
+    background: url('https://www.transparenttextures.com/patterns/stardust.png'), #1a2a6c; /* Starry background */
+    background-size: cover;
+    padding: 20px;
+    border-right: 2px solid #4b6cb7;
 }
-#form{
-    flex:2;
-    background-color: blueviolet;
-    
+
+/* Form section */
+#form {
+    flex: 2;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png'), #2b5876; /* Starry background */
+    background-size: cover;
+    padding: 20px;
+    border-left: 2px solid #4b6cb7;
+}
+
+/* Additional styling for elements inside the sections */
+#list h1, #form h1 {
+    text-align: center;
+    color: #f0f0f0;
+}
+
+#list p, #form p {
+    color: #dcdcdc;
+}
+
+button {
+    background-color: #4b6cb7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #182848;
 }
